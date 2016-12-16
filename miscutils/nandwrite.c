@@ -53,7 +53,7 @@
 
 #include "libbb.h"
 #include <mtd/mtd-user.h>
-
+//#include <mtd/mtd-abi.h>
 #define IS_NANDDUMP  (ENABLE_NANDDUMP && (!ENABLE_NANDWRITE || (applet_name[4] == 'd')))
 #define IS_NANDWRITE (ENABLE_NANDWRITE && (!ENABLE_NANDDUMP || (applet_name[4] != 'd')))
 
